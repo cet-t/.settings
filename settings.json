@@ -1,0 +1,60 @@
+{
+  "editor.fontSize": 14,
+  "prettier.requireConfig": true,
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.minimap.enabled": true,
+  "editor.codeLens": false,
+  // "editor.fontFamily": "HackGen Regular",
+  // "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "UDEV Gothic 35JPDOC Regular",
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.startupEditor": "none",
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "files.encoding": "utf8bom",
+  "editor.cursorStyle": "line",
+  "workbench.iconTheme": "material-icon-theme",
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.variableTypes": true,
+
+  "csharp.inlayHints.types.enabled": true,
+  "csharp.inlayHints.parameters.enabled": true,
+
+  "git.useEditorAsCommitInput": false,
+  "git.openRepositoryInParentFolders": "always",
+
+  "editor.rulers": [88],
+  "workbench.colorCustomizations": {
+    // "editorRuler.foreground": "#c23d1b50"
+    // "editor.background": "#1f1f1f",
+    // "editor.foreground": "#9e9e9e",
+    // "sideBarTitle.foreground": "#a3a3a3",
+    // "editorGroupHeader.tabsBackground": "#1f1f1f",
+    // "activityBar.background": "#1f1f1f",
+    // "statusBar.background": "#232724",
+    // "tab.activeBackground": "#1f1f1f",
+    // "tab.inactiveBackground": "#272727",
+    // "sideBar.background": "#272727",
+    // "sideBar.border": "#008888",
+    // "list.focusForeground": "#474747",
+    // "list.activeSelectionBackground": "#35a0a3",
+    // "menu.foreground": "#b1b1b15e",
+    // "menu.border": "#3c676e70",
+    // "menu.selectionBorder": "#a3a3a300"
+  },
+  "python.defaultInterpreterPath": "C:\\Users\\cet\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "python.formatting.provider": "black",
+  "python.formatting.provider": "autopep8",
+  "[python]": {
+    "editor.defaultFormatter": null,
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "workbench.colorTheme": "One Dark Pro Darker",
+}
