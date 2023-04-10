@@ -1,23 +1,30 @@
 {
   "editor.fontSize": 14,
-  "prettier.requireConfig": true,
-  "files.autoSave": "onFocusChange",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
   "editor.minimap.enabled": true,
   "editor.codeLens": false,
+  "editor.rulers": [88],
+  "editor.cursorStyle": "line",
+  "editor.cursorSmoothCaretAnimation": "on",
   // "editor.fontFamily": "HackGen Regular",
   // "editor.fontFamily": "JetBrains Mono",
-  "editor.fontFamily": "UDEV Gothic 35JPDOC Regular",
+  "editor.fontFamily": "UDEV Gothic LG Regular",
+  // "editor.fontFamily": "Fira Code Medium",
+  // "terminal.integrated.fontFamily": "UDEV Gothic JPDOC Regular",
+  "prettier.requireConfig": true,
+
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.startupEditor": "none",
+
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
+
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "files.encoding": "utf8bom",
-  "editor.cursorStyle": "line",
-  "workbench.iconTheme": "material-icon-theme",
+  // "files.encoding": "utf8bom",
+
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.variableTypes": true,
 
@@ -27,7 +34,8 @@
   "git.useEditorAsCommitInput": false,
   "git.openRepositoryInParentFolders": "always",
 
-  "editor.rulers": [88],
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
   "workbench.colorCustomizations": {
     // "editorRuler.foreground": "#c23d1b50"
     // "editor.background": "#1f1f1f",
@@ -47,14 +55,14 @@
     // "menu.selectionBorder": "#a3a3a300"
   },
   "python.defaultInterpreterPath": "C:\\Users\\cet\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   // "python.formatting.provider": "black",
   "python.formatting.provider": "autopep8",
   "[python]": {
     "editor.defaultFormatter": null,
   },
+
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
-  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.colorTheme": "Default Material Dark Theme",
 }
