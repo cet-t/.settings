@@ -1,0 +1,68 @@
+{
+  "editor.fontSize": 14,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.minimap.enabled": true,
+  "editor.codeLens": false,
+  "editor.rulers": [88],
+  "editor.cursorStyle": "line",
+  "editor.cursorSmoothCaretAnimation": "on",
+  // "editor.fontFamily": "HackGen Regular",
+  // "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "UDEV Gothic LG Regular",
+  // "editor.fontFamily": "Fira Code Medium",
+  // "terminal.integrated.fontFamily": "UDEV Gothic JPDOC Regular",
+  "prettier.requireConfig": true,
+
+  "security.workspace.trust.untrustedFiles": "open",
+
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  // "files.encoding": "utf8bom",
+
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.variableTypes": true,
+
+  "csharp.inlayHints.types.enabled": true,
+  "csharp.inlayHints.parameters.enabled": true,
+
+  "git.useEditorAsCommitInput": false,
+  "git.openRepositoryInParentFolders": "always",
+
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "workbench.colorCustomizations": {
+    // "editorRuler.foreground": "#c23d1b50"
+    // "editor.background": "#1f1f1f",
+    // "editor.foreground": "#9e9e9e",
+    // "sideBarTitle.foreground": "#a3a3a3",
+    // "editorGroupHeader.tabsBackground": "#1f1f1f",
+    // "activityBar.background": "#1f1f1f",
+    // "statusBar.background": "#232724",
+    // "tab.activeBackground": "#1f1f1f",
+    // "tab.inactiveBackground": "#272727",
+    // "sideBar.background": "#272727",
+    // "sideBar.border": "#008888",
+    // "list.focusForeground": "#474747",
+    // "list.activeSelectionBackground": "#35a0a3",
+    // "menu.foreground": "#b1b1b15e",
+    // "menu.border": "#3c676e70",
+    // "menu.selectionBorder": "#a3a3a300"
+  },
+  "python.defaultInterpreterPath": "C:\\Users\\cet\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  // "python.formatting.provider": "black",
+  "python.formatting.provider": "autopep8",
+  "[python]": {
+    "editor.defaultFormatter": null,
+  },
+
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "workbench.colorTheme": "Default Material Dark Theme",
+}
