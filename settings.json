@@ -1,68 +1,35 @@
 {
-	"editor.fontSize": 14,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.fontSize": 16.5,
+  	"editor.lineHeight": 1.5,
 	"editor.formatOnSave": true,
 	"editor.formatOnType": true,
 	"editor.formatOnPaste": true,
 	"editor.minimap.enabled": true,
-	"editor.rulers": [100],
+	"editor.rulers": [79, 100],
 	"editor.cursorStyle": "line",
 	"editor.cursorBlinking": "solid",
 	"editor.wordWrap": "on",
-	// AbIJij123[]()!&|.,<= == ->;あいう
-	// "editor.fontFamily": "cascadia mono, hackgen regular",
-	// "editor.fontFamily": "plemoljp35 hs light",
-	"editor.fontFamily": 
-		"anonymous pro, cascadia mono, hackgen regular",
-		// "jetbrains mono light, hackgen regular",
-	// "editor.fontFamily": "m plus 1 code medium",
-	// "editor.letterSpacing": 0.51,
+	// QAbIJij123[]()!&|.,<= == ->;あいう
+	"editor.fontFamily":
+		// "cascadia code, hackgen regular",
+		// "editor.letterSpacing": -0.4,
+		// "anonymous pro, hackgen regular",
+		// "agave nerd font regular, hackgen regular",
+		"agave nerd font propo regular, hackgen regular",
+		// "editor.letterSpacing": -0.25,
+		// "plemoljp35 hs medium",
 	// "editor.fontWeight": "normal",
-	"editor.fontVariations": true,
+	// "editor.fontVariations": true,
+	// "editor.suggest.insertMode": "replace",
 	"editor.fontLigatures": true,
-	"terminal.integrated.fontFamily": "cascadia mono, hackgen regular",
-	// "terminal.integrated.letterSpacing": 0.5,
+	"terminal.integrated.fontFamily": 
+		// "anonymous pro, hackgen regular",
+		"agave nerd regular, hackgen regular",
+		// "plemoljp35 hs light",
+	"terminal.integrated.letterSpacing": 1,
 	"editor.mouseWheelZoom": true,
 	"editor.codeLens": false,
 	"editor.smoothScrolling": false,
-	"editor.tokenColorCustomizations": {
-		"[GitHub Dark Dimmed]": {
-			"variables": "#d9e7b2",
-			"numbers": "#a1dbbb",
-			"strings": "#a1dbbb",
-			"functions": "#85b6cc"
-		},
-		"[JetBrains Rider Dark Theme]": {
-			"comments": "#686868",
-		},
-	},
-	"workbench.colorCustomizations": {
-		"editorUnnecessaryCode.border": "#e05959",
-		// "editor.background": "#191a1b"
-		// "contrastActiveBorder": "#575757"
-		"[Tango+]": {
-			"editorBracketHighlight.foreground1": "#bbbbbb",
-			"editorBracketHighlight.foreground2": "#bbbbbb",
-			"editorBracketHighlight.foreground3": "#bbbbbb",
-			"editorBracketHighlight.foreground4": "#bbbbbb",
-			"editorBracketHighlight.foreground5": "#bbbbbb",
-		},
-		"[Atom One Light]": {
-			"editorBracketHighlight.foreground1": "#000000",
-			"editorBracketHighlight.foreground2": "#000000",
-			"editorBracketHighlight.foreground3": "#000000",
-			"editorBracketHighlight.foreground4": "#000000",
-			"editorBracketHighlight.foreground5": "#000000",
-		},
-		"[GitHub Dark Dimmed]": {
-			// "editor.foreground": "#bbbbbb",
-			// "editorBracketHighlight.foreground1": "#bbbbbb",
-			// "editorBracketHighlight.foreground2": "#bbbbbb",
-			// "editorBracketHighlight.foreground3": "#bbbbbb",
-			// "editorBracketHighlight.foreground4": "#bbbbbb",
-			// "editorBracketHighlight.foreground5": "#bbbbbb",
-		}
-	},
 	"prettier.requireConfig": true,
 	"security.workspace.trust.untrustedFiles": "open",
 	"githubPullRequests.createOnPublishBranch": "never",
@@ -73,27 +40,27 @@
 	"git.openRepositoryInParentFolders": "always",
 	"explorer.confirmDragAndDrop": false,
 	"explorer.confirmDelete": false,
-	"files.encoding": "utf8bom",
-	// "files.encoding": "utf8",
+	// "files.encoding": "utf8bom",
+	"files.encoding": "utf8",
 	"python.analysis.inlayHints.functionReturnTypes": true,
 	"python.analysis.inlayHints.variableTypes": true,
 	"C_Cpp.formatting": "clangFormat",
-	"workbench.iconTheme": "vscode-great-icons",
 	"workbench.startupEditor": "none",
 	"python.defaultInterpreterPath": "C:\\Users\\cet\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
-	// "python.formatting.provider": "none",
-	// "python.formatting.provider": "black",
-	// "python.formatting.provider": "autopep8",
 	"[python]": {
 		"editor.defaultFormatter": "ms-python.autopep8"
 	},
 	"[csharp]": {
 		"editor.defaultFormatter": "ms-dotnettools.csharp"
-},
-"C_Cpp.default.compilerPath": "cl.exe",
+	},
 	"[cpp]": {
 		"editor.defaultFormatter": "ms-vscode.cpptools"
 	},
+	"[java]": {
+		"editor.defaultFormatter": "redhat.java"
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	
 	"redhat.telemetry.enabled": true,
 	"update.showReleaseNotes": false,
 	"errorLens.fontSize": "m plus 1 code regular",
@@ -111,8 +78,6 @@
 	"gitlens.defaultDateStyle": "absolute",
 	"C_Cpp.intelliSenseEngineFallback": "enabled",
 	"workbench.editor.closeEmptyGroups": false,
-	"glassit.alpha": 255,
-	"glassit.step": 5,
 	"dotnet.inlayHints.enableInlayHintsForParameters": false,
 	"csharp.inlayHints.enableInlayHintsForTypes": false,
 	"plantuml.exportFormat": "png",
@@ -121,9 +86,23 @@
 	"dotnet.codeLens.enableReferencesCodeLens": false,
 	"dotnet.codeLens.enableTestsCodeLens": false,
 	"material-icon-theme.folders.theme": "specific",
-	"workbench.colorTheme": "Atom One Dark",
+	/* "extensions.experimental.affinity": {
+		"asvetliakov.vscode-neovim": 1
+	}, */
+	"lldb.suppressUpdateNotifications": true,
+	"liveServer.settings.donotShowInfoMsg": false,
+	"editor.renderWhitespace": "boundary",
+	"java.configuration.runtimes": [],
+	"workbench.colorCustomizations": {
+		"editorUnnecessaryCode.border": "#ff0000",
+		"editorUnnecessaryCode.opacity": "#ffffff69",
+		"editorCursor.foreground": "#ffc600"
+	},
 	"extensions.experimental.affinity": {
 		"asvetliakov.vscode-neovim": 1
 	},
-	"lldb.suppressUpdateNotifications": true,
+	"code-runner.runInTerminal": true,
+	"workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+	"workbench.colorTheme": "One Dark Pro Darker"
 }
+
