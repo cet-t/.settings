@@ -1,5 +1,6 @@
 {
-	"editor.fontSize": 16.5,
+	// "editor.fontSize": 16.5,
+	"editor.fontSize": 15,
   	"editor.lineHeight": 1.5,
 	"editor.formatOnSave": true,
 	"editor.formatOnType": true,
@@ -9,13 +10,14 @@
 	"editor.cursorStyle": "line",
 	"editor.cursorBlinking": "solid",
 	"editor.wordWrap": "on",
-	// QAbIJij123[]()!&|.,<= == ->;あいう
+	// QAbIJij0123[]()!&|.,<= == ->;あいう
 	"editor.fontFamily":
 		// "cascadia code, hackgen regular",
 		// "editor.letterSpacing": -0.4,
 		// "anonymous pro, hackgen regular",
-		// "agave nerd font regular, hackgen regular",
-		"agave nerd font propo regular, hackgen regular",
+		// "agave nerd font propo regular, hackgen regular",
+		"agave regular, udev gothic regular, hackgen regular",
+		// "udev gothic regular",
 		// "editor.letterSpacing": -0.25,
 		// "plemoljp35 hs medium",
 	// "editor.fontWeight": "normal",
@@ -24,7 +26,7 @@
 	"editor.fontLigatures": true,
 	"terminal.integrated.fontFamily": 
 		// "anonymous pro, hackgen regular",
-		"agave nerd regular, hackgen regular",
+		"agave regular, hackgen regular",
 		// "plemoljp35 hs light",
 	"terminal.integrated.letterSpacing": 1,
 	"editor.mouseWheelZoom": true,
@@ -53,6 +55,7 @@
 	"[csharp]": {
 		"editor.defaultFormatter": "ms-dotnettools.csharp"
 	},
+	// "omnisharp.useEditorFormattingSettings": false,
 	"[cpp]": {
 		"editor.defaultFormatter": "ms-vscode.cpptools"
 	},
@@ -86,11 +89,8 @@
 	"dotnet.codeLens.enableReferencesCodeLens": false,
 	"dotnet.codeLens.enableTestsCodeLens": false,
 	"material-icon-theme.folders.theme": "specific",
-	/* "extensions.experimental.affinity": {
-		"asvetliakov.vscode-neovim": 1
-	}, */
 	"lldb.suppressUpdateNotifications": true,
-	"liveServer.settings.donotShowInfoMsg": false,
+	"liveServer.settings.donotShowInfoMsg": true,
 	"editor.renderWhitespace": "boundary",
 	"java.configuration.runtimes": [],
 	"workbench.colorCustomizations": {
@@ -103,6 +103,5 @@
 	},
 	"code-runner.runInTerminal": true,
 	"workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
-	"workbench.colorTheme": "One Dark Pro Darker"
+	"workbench.colorTheme": "One Dark Pro Darker",
 }
-
