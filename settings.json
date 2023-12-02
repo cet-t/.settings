@@ -1,7 +1,5 @@
 {
-	// "editor.fontSize": 16.5,
-	"editor.fontSize": 15,
-  	"editor.lineHeight": 1.5,
+	"editor.fontSize": 16.5,
 	"editor.formatOnSave": true,
 	"editor.formatOnType": true,
 	"editor.formatOnPaste": true,
@@ -10,24 +8,23 @@
 	"editor.cursorStyle": "line",
 	"editor.cursorBlinking": "solid",
 	"editor.wordWrap": "on",
-	// QAbIJij0123[]()!&|.,<= == ->;あいう
+	// QAbIJij0123[]()!&|.,<= != == ->;あいう
+	// ABCDEFGHIJKLMNOPQRSTUVWXYZ
+	// abcdefghijklmnopqrstuvwxyz
+	// 0123456789
+	// ()[]{}
+	// あいうえお
 	"editor.fontFamily":
-		// "cascadia code, hackgen regular",
-		// "editor.letterSpacing": -0.4,
+		// "cascadia mono, hackgen regular",
 		// "anonymous pro, hackgen regular",
-		// "agave nerd font propo regular, hackgen regular",
 		"agave regular, udev gothic regular, hackgen regular",
-		// "udev gothic regular",
-		// "editor.letterSpacing": -0.25,
-		// "plemoljp35 hs medium",
-	// "editor.fontWeight": "normal",
+		// "0xproto regular",
 	// "editor.fontVariations": true,
-	// "editor.suggest.insertMode": "replace",
+	// "editor.lineHeight": 1.15,
+	// "editor.letterSpacing": -0.2,
 	"editor.fontLigatures": true,
 	"terminal.integrated.fontFamily": 
-		// "anonymous pro, hackgen regular",
 		"agave regular, hackgen regular",
-		// "plemoljp35 hs light",
 	"terminal.integrated.letterSpacing": 1,
 	"editor.mouseWheelZoom": true,
 	"editor.codeLens": false,
@@ -91,7 +88,6 @@
 	"material-icon-theme.folders.theme": "specific",
 	"lldb.suppressUpdateNotifications": true,
 	"liveServer.settings.donotShowInfoMsg": true,
-	"editor.renderWhitespace": "boundary",
 	"java.configuration.runtimes": [],
 	"workbench.colorCustomizations": {
 		"editorUnnecessaryCode.border": "#ff0000",
