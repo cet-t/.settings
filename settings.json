@@ -1,5 +1,5 @@
 {
-	"editor.fontSize": 16.5,
+	// "editor.fontSize": 16,
 	"editor.formatOnSave": true,
 	"editor.formatOnType": true,
 	"editor.formatOnPaste": true,
@@ -15,16 +15,32 @@
 	// ()[]{}
 	// あいうえお
 	"editor.fontFamily":
+		"monocraft, 美咲ゴシック第2", // https://littlelimit.net/misaki.htm
+	"editor.fontSize": 18,
 		// "cascadia mono, hackgen regular",
+		// "press start 2p",
+		// "ricty diminished",
+	// "editor.fontSize": 18,
+	// "editor.fontSize": 14,
+	// "editor.letterSpacing": -1.5,
 		// "anonymous pro, hackgen regular",
-		"agave regular, udev gothic regular, hackgen regular",
+		// "udev gothic regular, hackgen regular",
+		// "agave regular, hackgen regular",
+	// 	"yutapon coding",
+	// 	"m plus 1 code regular",
+	// "editor.fontSize": 16,
+	"editor.lineHeight": 1.1,
+	// "editor.letterSpacing": 0.2,
+	// 	"ubuntu mono, hackgen regular",
+	// "editor.fontSize": 18.5,
 		// "0xproto regular",
 	// "editor.fontVariations": true,
 	// "editor.lineHeight": 1.15,
 	// "editor.letterSpacing": -0.2,
 	"editor.fontLigatures": true,
 	"terminal.integrated.fontFamily": 
-		"agave regular, hackgen regular",
+		// "agave regular, hackgen regular",
+		"yutapon coding",
 	"terminal.integrated.letterSpacing": 1,
 	"editor.mouseWheelZoom": true,
 	"editor.codeLens": false,
@@ -39,8 +55,8 @@
 	"git.openRepositoryInParentFolders": "always",
 	"explorer.confirmDragAndDrop": false,
 	"explorer.confirmDelete": false,
-	// "files.encoding": "utf8bom",
-	"files.encoding": "utf8",
+	"files.encoding": "utf8bom",
+	// "files.encoding": "utf8",
 	"python.analysis.inlayHints.functionReturnTypes": true,
 	"python.analysis.inlayHints.variableTypes": true,
 	"C_Cpp.formatting": "clangFormat",
@@ -54,8 +70,9 @@
 	},
 	// "omnisharp.useEditorFormattingSettings": false,
 	"[cpp]": {
-		"editor.defaultFormatter": "ms-vscode.cpptools"
+		"editor.defaultFormatter": "ms-vscode.cpptools",
 	},
+	// "cpp": "cd $dir && g++ $fileName -std=c++2a -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
 	"[java]": {
 		"editor.defaultFormatter": "redhat.java"
 	},
@@ -99,5 +116,12 @@
 	},
 	"code-runner.runInTerminal": true,
 	"workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+	"editor.lineNumbers": "relative",
+	"cmake.configureOnOpen": true,
+	"[rust]": {
+		"editor.defaultFormatter": "rust-lang.rust-analyzer"
+	},
+	"cmake.showOptionsMovedNotification": false,
 	"workbench.colorTheme": "One Dark Pro Darker",
+	"terminal.integrated.enableMultiLinePasteWarning": false
 }
