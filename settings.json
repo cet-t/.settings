@@ -8,27 +8,28 @@
 	"editor.cursorStyle": "line",
 	"editor.cursorBlinking": "solid",
 	"editor.wordWrap": "on",
-	// QAbIJij0123[]()!&|.,<= != == ->;あいう
+	// QAbIJij0123[]()!&|.,<= != == ->;あいうめぬねわ < - > ! ^ = 
 	// ABCDEFGHIJKLMNOPQRSTUVWXYZ
 	// abcdefghijklmnopqrstuvwxyz
 	// 0123456789
-	// ()[]{}
-	// あいうえお
 	"editor.fontFamily":
-		"monocraft, 美咲ゴシック第2", // https://littlelimit.net/misaki.htm
-	"editor.fontSize": 18,
+		// "0xproto heavy",
+		// "pixel code, 美咲ゴシック第2", // https://littlelimit.net/misaki.htm
+		// "minecraft_fixed, 美咲ゴシック第2", 
+		// "monocraft, 美咲ゴシック第2",
+	// "editor.fontSize": 17,
+	// 	"agave heavy, hackgen regular",
+	// "editor.fontSize": 18.5,
 		// "cascadia mono, hackgen regular",
 		// "press start 2p",
 		// "ricty diminished",
 	// "editor.fontSize": 18,
-	// "editor.fontSize": 14,
 	// "editor.letterSpacing": -1.5,
 		// "anonymous pro, hackgen regular",
 		// "udev gothic regular, hackgen regular",
-		// "agave regular, hackgen regular",
-	// 	"yutapon coding",
-	// 	"m plus 1 code regular",
-	// "editor.fontSize": 16,
+		"yutapon coding",
+		// "m plus 1 code regular",
+	"editor.fontSize": 18,
 	"editor.lineHeight": 1.1,
 	// "editor.letterSpacing": 0.2,
 	// 	"ubuntu mono, hackgen regular",
@@ -40,7 +41,8 @@
 	"editor.fontLigatures": true,
 	"terminal.integrated.fontFamily": 
 		// "agave regular, hackgen regular",
-		"yutapon coding",
+		// "yutapon coding",
+		"monocraft, 美咲ゴシック第2", // https://littlelimit.net/misaki.htm
 	"terminal.integrated.letterSpacing": 1,
 	"editor.mouseWheelZoom": true,
 	"editor.codeLens": false,
@@ -123,5 +125,7 @@
 	},
 	"cmake.showOptionsMovedNotification": false,
 	"workbench.colorTheme": "One Dark Pro Darker",
-	"terminal.integrated.enableMultiLinePasteWarning": false
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"editor.renderWhitespace": "all",
+	"files.autoSave": "afterDelay"
 }
