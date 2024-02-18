@@ -1,3 +1,5 @@
+" Win: %LOCALAPPDATA%\nvim\init.vim
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -20,6 +22,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdtree'
+Plug 'simeji/winresizer'
+Plug 'sheerun/vim-polyglot'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'honza/vim-snippets'
+Plug 'pepo-le/win-ime-con.nvim'
 call plug#end()
 
 " key settings
