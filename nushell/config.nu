@@ -1,4 +1,5 @@
-# %APPDATA%\Roaming\nushell\config.nu
+# win: %APPDATA%\Roaming\nushell\config.nu
+# linux: ~/.config/nushell/config.nu
 
 # Nushell Config File
 #
@@ -844,3 +845,4 @@ $env.config = {
 alias ll = ls -l
 alias nvimconfig = nvim ~\AppData\Local\nvim\init.vim
 alias nuconfig = nvim ~\AppData\Roaming\nushell\config.nu
+
