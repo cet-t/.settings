@@ -14,7 +14,6 @@
 
 - 右側のBS, Enterは基本的には押さずにレイヤー切り替えで対応
 - 分割スペース前提
-
 </detail>
 
 [colemak_hp]: https://colemak.com
