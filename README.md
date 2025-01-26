@@ -1,5 +1,8 @@
 ##### こる幕 ([Colemak][colemak_hp]ベース)
 
+<detail>
+<summary><a href="https://colemak.com">こる幕</a></summary>
+
 - レイヤー1
 ![layer0][layer1_img]
 
@@ -11,6 +14,8 @@
 
 - 右側のBS, Enterは基本的には押さずにレイヤー切り替えで対応
 - 分割スペース前提
+
+</detail>
 
 [colemak_hp]: https://colemak.com
 [layer1_img]: ./keyboards/aks068/alice_68.korumaku.layer0.png
