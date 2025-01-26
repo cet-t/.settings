@@ -1,7 +1,5 @@
-##### こる幕 ([Colemak][colemak_hp]ベース)
-
 <detail>
-<summary>こる幕<a href="https://colemak.com">Colemak</a>ベース</summary>
+<summary>こる幕 <a href="https://colemak.com">Colemak</a>ベース</summary>
 
 - レイヤー1
 ![layer0][layer1_img]
