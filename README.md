@@ -13,3 +13,7 @@
 - レイヤー3
 
 ![](./keyboards/cherry_v4/cherry_v4.layer2.png)
+
+ぱまらな◯◯わうゆや
+はさたか、。んえいお
+ばざだがｳﾞ・あよっ・
