@@ -4,7 +4,10 @@
 	"editor.formatOnType": true,
 	"editor.formatOnPaste": true,
 	"editor.minimap.enabled": true,
-	"editor.rulers": [79, 100],
+	"editor.rulers": [
+		79,
+		100
+	],
 	"editor.cursorStyle": "line",
 	"editor.cursorBlinking": "solid",
 	"editor.wordWrap": "on",
@@ -13,36 +16,36 @@
 	// abcdefghijklmnopqrstuvwxyz
 	// 0123456789
 	"editor.fontFamily":
-		// "0xproto heavy",
-		// "pixel code, 美咲ゴシック第2", // https://littlelimit.net/misaki.htm
-		// "minecraft_fixed, 美咲ゴシック第2", 
-		// "monocraft, 美咲ゴシック第2",
+	// "0xproto heavy",
+	// "pixel code, 美咲ゴシック第2", // https://littlelimit.net/misaki.htm
+	// "minecraft_fixed, 美咲ゴシック第2", 
+	// "monocraft, 美咲ゴシック第2",
 	// "editor.fontSize": 17,
 	// 	"agave heavy, hackgen regular",
 	// "editor.fontSize": 18.5,
-		// "cascadia mono, hackgen regular",
-		// "press start 2p",
-		// "ricty diminished",
+	// "cascadia mono, hackgen regular",
+	// "press start 2p",
+	// "ricty diminished",
 	// "editor.fontSize": 18,
 	// "editor.letterSpacing": -1.5,
-		// "anonymous pro, hackgen regular",
-		// "udev gothic regular, hackgen regular",
-		"yutapon coding",
-		// "m plus 1 code regular",
-	"editor.fontSize": 18,
+	// "anonymous pro, hackgen regular",
+	// "udev gothic regular, hackgen regular",
+	"yutapon coding",
+	// "m plus 1 code regular",
+	"editor.fontSize": 12,
 	"editor.lineHeight": 1.1,
 	// "editor.letterSpacing": 0.2,
 	// 	"ubuntu mono, hackgen regular",
 	// "editor.fontSize": 18.5,
-		// "0xproto regular",
+	// "0xproto regular",
 	// "editor.fontVariations": true,
 	// "editor.lineHeight": 1.15,
 	// "editor.letterSpacing": -0.2,
 	"editor.fontLigatures": true,
-	"terminal.integrated.fontFamily": 
-		// "agave regular, hackgen regular",
-		// "yutapon coding",
-		"monocraft, 美咲ゴシック第2", // https://littlelimit.net/misaki.htm
+	"terminal.integrated.fontFamily":
+	// "agave regular, hackgen regular",
+	// "yutapon coding",
+	"monocraft, 美咲ゴシック第2", // https://littlelimit.net/misaki.htm
 	"terminal.integrated.letterSpacing": 1,
 	"editor.mouseWheelZoom": true,
 	"editor.codeLens": false,
@@ -79,7 +82,6 @@
 		"editor.defaultFormatter": "redhat.java"
 	},
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	
 	"redhat.telemetry.enabled": true,
 	"update.showReleaseNotes": false,
 	"errorLens.fontSize": "m plus 1 code regular",
