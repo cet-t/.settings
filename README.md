@@ -1,20 +1,29 @@
 <detail>
 
-## Cherry V4
+## Corne V4 Cherry
 
-- レイヤー1
+### タップダンス
 
-![](./keyboards/cherry_v4/cherry_v4.layer0.png)
+| -   | タップ | ホールド              |
+| --- | ------ | --------------------- |
+| TD0 | t      | -                     |
+| TD1 | e      | ,                     |
+| TD2 | h      | F24(IME有効化/無効化) |
+| TD3 | a      | .                     |
 
-- レイヤー2
+### コンボ
 
-![](./keyboards/cherry_v4/cherry_v4.layer1.png)
+| キー1 | キー2 | 入力               |
+| ----- | ----- | ------------------ |
+| Q     | G     | Esc                |
+| G     | D     | Tab                |
+| R     | S     | Ctrl               |
+| Z     | X     | PrtScrn(Gyazo起動) |
 
-- レイヤー3
+### レイヤー
 
-![](./keyboards/cherry_v4/cherry_v4.layer2.png)
-
-ぱまらな◯◯わうゆや
-はさたか、。んえいお
-ばざだがｳﾞ・あよっ・
-
+| -   | -                                               |
+| --- | ----------------------------------------------- |
+| 0   | ![](./keyboards/cherry_v4/cherry_v4.layer0.png) |
+| 1   | ![](./keyboards/cherry_v4/cherry_v4.layer1.png) |
+| 2   | ![](./keyboards/cherry_v4/cherry_v4.layer2.png) |
