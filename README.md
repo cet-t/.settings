@@ -1,29 +1,27 @@
 <detail>
 
-## Corne V4 Cherry
+## X7s
 
 ### タップダンス
 
-| -   | タップ | ホールド              |
-| --- | ------ | --------------------- |
-| TD0 | t      | -                     |
-| TD1 | e      | ,                     |
-| TD2 | h      | F24(IME有効化/無効化) |
-| TD3 | a      | .                     |
+| -   | タップ | ホールド |
+| --- | ------ | -------- |
+| -   | -      | -        |
 
 ### コンボ
 
-| キー1 | キー2 | 入力               |
-| ----- | ----- | ------------------ |
-| Q     | G     | Esc                |
-| G     | D     | Tab                |
-| R     | S     | Ctrl               |
-| Z     | X     | PrtScrn(Gyazo起動) |
+| キー1 | キー2 | 入力                  |
+| :---: | :---: | :-------------------- |
+|   Q   |   G   | Esc                   |
+|   G   |   D   | Tab                   |
+|   R   |   S   | Ctrl                  |
+|   Z   |   X   | PrtScrn(Gyazo起動)    |
+|   D   |   H   | F24(IME無効化/有効化) |
 
 ### レイヤー
 
-| -   | -                                               |
-| --- | ----------------------------------------------- |
-| 0   | ![](./keyboards/cherry_v4/cherry_v4.layer0.png) |
-| 1   | ![](./keyboards/cherry_v4/cherry_v4.layer1.png) |
-| 2   | ![](./keyboards/cherry_v4/cherry_v4.layer2.png) |
+| -   | -                               |
+| --- | ------------------------------- |
+| 0   | ![](./keyboards/x7s/layer0.png) |
+| 1   | ![](./keyboards/x7s/layer1.png) |
+| 2   | ![](./keyboards/x7s/layer2.png) |
