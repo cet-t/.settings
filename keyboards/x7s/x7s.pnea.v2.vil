@@ -78,7 +78,7 @@
       [
         "LSFT(KC_GRAVE)",
         "LSFT(KC_LBRACKET)",
-        "LSFT(KC_GRAVE)",
+        "KC_GRAVE",
         "LSFT(KC_RBRACKET)",
         "LSFT(KC_4)"
       ],

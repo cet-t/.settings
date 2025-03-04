@@ -6,7 +6,7 @@
 
 | -   | タップ | ホールド |
 | --- | ------ | -------- |
-| -   | -      | -        |
+| TD0 | .      | ,        |
 
 ### コンボ
 
@@ -20,8 +20,10 @@
 
 ### レイヤー
 
-| -   | -                               |
-| --- | ------------------------------- |
-| 0   | ![](./keyboards/x7s/layer0.png) |
-| 1   | ![](./keyboards/x7s/layer1.png) |
-| 2   | ![](./keyboards/x7s/layer2.png) |
+|                                     |
+| ----------------------------------- |
+| ![](./keyboards/x7s/x7s.layer0.png) |
+| ![](./keyboards/x7s/x7s.layer1.png) |
+| ![](./keyboards/x7s/x7s.layer2.png) |
+
+
