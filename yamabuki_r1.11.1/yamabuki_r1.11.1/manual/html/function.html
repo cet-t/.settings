@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>やまぶきR</title>
+</head>
+<body bgcolor="#dfefff">
+
+<h2>機能キーの入れ替え</h2>
+<ul>
+　配列定義ファイルに[機能キー]という項目を設定すると、一部の機能キーを入れ替えることができます。<br>
+</ul>
+<br>
+<h3>・設定</h3>
+<ul>
+　一行に「,」（半角コンマ）を区切り文字として、二つのキーを指定してください。先（左）に指定したキーを、後（右）に指定したキーに置き換えます。<br>
+　半角空白、全角空白、タブ文字は空白文字として無視されます。<br>
+</ul>
+<br>
+<h3>・有効なキー指定</h3>
+<ul>
+　以下に示した文字列が、そのまま有効なキー指定となります。<br>
+<br>
+<h5>日本語キーボード</h5>
+　日本語キーボードで入れ替えることができるキーは、<br>
+<table><tr>
+<td width=40>
+</td>
+<td>
+<hr>
+Esc, Tab, 無変換, Space, 変換, Enter, BackSpace, Delete, Insert,<br>
+左Shift, 右Shift, 左Ctrl, 右Ctrl, 左Alt, 右Alt, CapsLock/英数,<br>
+半角/全角, カタカナ/ひらがな, 左Win, 右Win, Applications,<br>
+Capsロック, かなロック,<br>
+F1, F2, F3, F4, F5, F6, F7, F8,<br>
+F9, F10, F11, F12, F13, F14, F15, F16,<br>
+F17, F18, F19, F20, F21, F22, F23, F24,<br>
+上, 左, 右, 下, Home, End, PageUp, PageDown,<br>
+拡張1, 拡張2, 拡張3, 拡張4<br>
+<hr>
+</td>
+</tr></table>
+です。<br>
+　「Capsロック」は「Shift＋CapsLock/英数」、「かなロック」は「Ctrl＋Shift＋カタカナ/ひらがな」です。この二つのキーは入れ替え元としては指定できません。<br>
+<br>
+<h5>英語キーボード</h5>
+　英語キーボードで入れ替えることができるキーは、<br>
+<table><tr>
+<td width=40>
+</td>
+<td>
+<hr>
+Esc, Tab, 無変換, Space, 変換, Enter, BackSpace, Delete, Insert,<br>
+左Shift, 右Shift, 左Ctrl, 右Ctrl, 左Alt, 右Alt, CapsLock,<br>
+カタカナ/ひらがな, 左Win, 右Win, Applications,<br>
+F1, F2, F3, F4, F5, F6, F7, F8,<br>
+F9, F10, F11, F12, F13, F14, F15, F16,<br>
+F17, F18, F19, F20, F21, F22, F23, F24,<br>
+上, 左, 右, 下, Home, End, PageUp, PageDown,<br>
+拡張1, 拡張2, 拡張3, 拡張4<br>
+<hr>
+</td>
+</tr></table>
+です。<br>
+<br>
+<h5>AXキーボード</h5>
+　AXキーボードで入れ替えることができるキーは、<br>
+<table><tr>
+<td width=40>
+</td>
+<td>
+<hr>
+Esc, Tab, 無変換, Space, 変換, Enter, BackSpace, Delete, Insert,<br>
+左Shift, 右Shift, 左Ctrl, 左Alt, 漢字, 英数/カナ, CapsLock,<br>
+F1, F2, F3, F4, F5, F6, F7, F8,<br>
+F9, F10, F11, F12, F13, F14, F15, F16,<br>
+F17, F18, F19, F20, F21, F22, F23, F24,<br>
+上, 左, 右, 下, Home, End, PageUp, PageDown,<br>
+拡張1, 拡張2, 拡張3, 拡張4<br>
+<hr>
+</td>
+</tr></table>
+です。<br>
+<br>
+<h5>IBM 5576-002キーボード</h5>
+　IBM 5576-002キーボードで入れ替えることができるキーは、<br>
+<table><tr>
+<td width=40>
+</td>
+<td>
+<hr>
+Esc, Tab, 無変換, Space, 変換, Enter, BackSpace, Delete, Insert,<br>
+左Shift, 右Shift, 左Ctrl, 右Ctrl, 前面キー, 漢字/カタカナ, CapsLock/英数,<br>
+半角/全角, ひらがな, Capsロック, かなロック,<br>
+F1, F2, F3, F4, F5, F6, F7, F8,<br>
+F9, F10, F11, F12, F13, F14, F15, F16,<br>
+F17, F18, F19, F20, F21, F22, F23, F24,<br>
+上, 左, 右, 下, Home, End, PageUp, PageDown,<br>
+拡張1, 拡張2, 拡張3, 拡張4<br>
+<hr>
+</td>
+</tr></table>
+です。<br>
+　「Capsロック」は「Shift＋CapsLock/英数」、「かなロック」は「Ctrl＋ひらがな」です。この二つのキーは入れ替え元としては指定できません。<br>
+<br>
+<h5>文字キーの入れ替え</h5>
+　キーを指定する文字を全角英字で書くと、文字キーを入れ替えることができます。<br>
+　キー指定文字は、キーを押したときに出る英数記号の文字です。バックスラッシュは円記号と同じになってしまうので、シフト側の文字（日本語キーボードなら「＿」）で指定してください。<br>
+</ul>
+<br>
+<h3>・拡張キー</h3>
+<ul>
+　「拡張1」などは、キーボード上にないキーへ入れ替えます。親指シフトキーとして使うためのものです。<br>
+　この「拡張1」などを使うことによって、既存のキーを犠牲にすることなしに親指シフト専用キーを作りだすことができます。<br>
+　「拡張1」などを単独打鍵しても何も出ません。<br>
+</ul>
+<br>
+<h3>・制限事項</h3>
+<ul>
+　「CapsLock/英数」キー、「半角/全角」キー、「カタカナ/ひらがな」キー、「漢字」キー、「英数/カナ」キー、「漢字/カタカナ」キー、「ひらがな」キーはキーアップが正常に送られてこないので、これらのキーを別のキーに置き換えた場合は、キーダウン時に瞬時にキーアップするようにしています。そのため、これらのキーをモディファイアキーに入れ替えてもモディファイアはかかりませんし、親指シフトキーとしても使えません。<br>
+</ul>
+
+</body>
+</html>
