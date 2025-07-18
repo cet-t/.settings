@@ -5,10 +5,6 @@
  * http://kouy.exblog.jp/
  */
 
--option-output[
-  {‚Á} | {tt{BS}}
-]
-
 
 /* ’P‘Å */
 [
