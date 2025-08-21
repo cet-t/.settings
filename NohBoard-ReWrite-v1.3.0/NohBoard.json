@@ -1,0 +1,21 @@
+{
+  "Capitalization": 1,
+  "FollowShiftForCapsInsensitive": false,
+  "FollowShiftForCapsSensitive": false,
+  "LoadedCategory": "BurningFish",
+  "LoadedGlobalStyle": true,
+  "LoadedKeyboard": "us_intlmousemove",
+  "LoadedStyle": "default",
+  "MouseFromCenter": false,
+  "MouseSensitivity": 50,
+  "PressHold": 0,
+  "ScrollHold": 50,
+  "TrapKeyboard": false,
+  "TrapMouse": false,
+  "TrapToggleKeyCode": 145,
+  "UpdateInterval": 33,
+  "UpdateTextPosition": false,
+  "WindowTitle": "",
+  "X": 515,
+  "Y": 962
+}

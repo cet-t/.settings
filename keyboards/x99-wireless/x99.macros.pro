@@ -4,52 +4,7 @@
 <List SizeOfView="6" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </PredefinedCombo>
 <PredefinedMacro>
-<List SizeOfView="9" ViewStartAt="0" CursorPos="1" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0">
-<x ID="0" t1="screenshot">
-<List SizeOfView="9" ViewStartAt="0" CursorPos="5" Cycles="1" IsAutoInterval="1" Delay="30" PlayMode="0">
-<x ID="0" t1="LCTRL Down">
 <List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
-</x>
-<x ID="1" t1="LSHIFT Down">
-<List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
-</x>
-<x ID="2" t1="; Down">
-<List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
-</x>
-<x ID="3" t1="; UP">
-<List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
-</x>
-<x ID="4" t1="LCTRL UP">
-<List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
-</x>
-<x ID="5" t1="LSHIFT UP">
-<List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
-</x>
-</List>
-</x>
-<x ID="1" t1="videocapture">
-<List SizeOfView="9" ViewStartAt="0" CursorPos="5" Cycles="1" IsAutoInterval="1" Delay="30" PlayMode="0">
-<x ID="0" t1="LSHIFT Down">
-<List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
-</x>
-<x ID="1" t1="LCTRL Down">
-<List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
-</x>
-<x ID="2" t1="&apos; Down">
-<List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
-</x>
-<x ID="3" t1="&apos; UP">
-<List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
-</x>
-<x ID="4" t1="LCTRL UP">
-<List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
-</x>
-<x ID="5" t1="LSHIFT UP">
-<List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
-</x>
-</List>
-</x>
-</List>
 </PredefinedMacro>
 <PredefinedEmu>
 <List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
@@ -876,25 +831,25 @@
 <List SizeOfView="0" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </ComboKey>
 </KEY>
-<KEY ID="17" Level="0" Mode="3" HWCode="0">
+<KEY ID="17" Level="0" Mode="3" HWCode="83">
 <ComboKey>
 <List SizeOfView="9" ViewStartAt="0" CursorPos="5" Cycles="1" IsAutoInterval="1" Delay="30" PlayMode="0">
-<x ID="0" t1="LSHIFT Down">
+<x ID="0" t1="LSHIFT">
 <List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </x>
-<x ID="1" t1="LCTRL Down">
+<x ID="1" t1="LCTRL">
 <List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </x>
-<x ID="2" t1="&apos; Down">
+<x ID="2" t1="&apos;">
 <List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </x>
-<x ID="3" t1="&apos; UP">
+<x ID="3" t1="&apos;">
 <List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </x>
-<x ID="4" t1="LCTRL UP">
+<x ID="4" t1="LCTRL">
 <List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </x>
-<x ID="5" t1="LSHIFT UP">
+<x ID="5" t1="LSHIFT">
 <List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </x>
 </List>
@@ -940,25 +895,25 @@
 <List SizeOfView="0" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </ComboKey>
 </KEY>
-<KEY ID="18" Level="0" Mode="3" HWCode="0">
+<KEY ID="18" Level="0" Mode="3" HWCode="86">
 <ComboKey>
 <List SizeOfView="9" ViewStartAt="0" CursorPos="5" Cycles="1" IsAutoInterval="1" Delay="30" PlayMode="0">
-<x ID="0" t1="LCTRL Down">
+<x ID="0" t1="LCTRL">
 <List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </x>
-<x ID="1" t1="LSHIFT Down">
+<x ID="1" t1="LSHIFT">
 <List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </x>
-<x ID="2" t1="; Down">
+<x ID="2" t1=";">
 <List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </x>
-<x ID="3" t1="; UP">
+<x ID="3" t1=";">
 <List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </x>
-<x ID="4" t1="LCTRL UP">
+<x ID="4" t1="LCTRL">
 <List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </x>
-<x ID="5" t1="LSHIFT UP">
+<x ID="5" t1="LSHIFT">
 <List SizeOfView="9" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </x>
 </List>
@@ -2634,7 +2589,7 @@
 <List SizeOfView="0" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </ComboKey>
 </KEY>
-<KEY ID="55" Level="2" Mode="0" HWCode="0">
+<KEY ID="55" Level="2" Mode="1" HWCode="67">
 <ComboKey>
 <List SizeOfView="0" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </ComboKey>
@@ -3354,7 +3309,7 @@
 <List SizeOfView="0" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </ComboKey>
 </KEY>
-<KEY ID="71" Level="2" Mode="0" HWCode="198">
+<KEY ID="71" Level="2" Mode="1" HWCode="55">
 <ComboKey>
 <List SizeOfView="0" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </ComboKey>
@@ -4164,7 +4119,7 @@
 <List SizeOfView="0" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </ComboKey>
 </KEY>
-<KEY ID="89" Level="2" Mode="0" HWCode="155">
+<KEY ID="89" Level="2" Mode="1" HWCode="69">
 <ComboKey>
 <List SizeOfView="0" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </ComboKey>
@@ -4209,7 +4164,7 @@
 <List SizeOfView="0" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </ComboKey>
 </KEY>
-<KEY ID="90" Level="2" Mode="0" HWCode="0">
+<KEY ID="90" Level="2" Mode="1" HWCode="70">
 <ComboKey>
 <List SizeOfView="0" ViewStartAt="0" CursorPos="0" Cycles="1" IsAutoInterval="0" Delay="30" PlayMode="0"/>
 </ComboKey>
