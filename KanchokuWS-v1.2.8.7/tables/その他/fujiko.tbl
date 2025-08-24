@@ -1,0 +1,11 @@
+#define display-name "ふじこ"
+
+;; 8キー同時打鍵デモ用のネタ配列
+
+#set CombinationKeyMaxAllowedLeadTimeMs=1000
+#set CombinationKeyMinOverlappingTimeMs=1000
+
+#combination oneshot
+-20,21,22,23,26,27,28,29>"くぁwせdrftgyふじこlp!{Enter}"
+#end combination
+

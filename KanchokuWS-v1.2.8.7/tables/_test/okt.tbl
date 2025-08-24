@@ -1,0 +1,70 @@
+#define display-name "OKT（漢直WS作者用）"
+;; -------------------------------------------------------------------
+;; okt.tbl --- OKT-Code テーブルファイル (漢直窓S 用)
+;; -------------------------------------------------------------------
+;;
+;; kw126eb-20020505.zip の t.tbl をもとに、キー割り当てを修正しました。
+;;
+;; キー割り当て (キーの表記は 106.key の場合のもの)
+;;
+;;   jf         部首合成変換
+;;   fj         交ぜ書き変換
+
+#define table-name "OKT"
+
+;#set ZenkakuModeKeySeq=
+;#set ZenkakuOneCharKeySeq="42"
+;#set KatakanaModeKeySeq=caps
+;#set NextThroughKeySeq="43"
+;#set HistoryKeySeq="44"
+;#set HistoryOneCharKeySeq="48"
+;#set HistoryFewCharsKeySeq="45"
+;#set MazegakiKeySeq=S40
+;#set BushuCompKeySeq=26,23
+;#set BushuAssocKeySeq="47"
+;#set BushuAssocDirectKeySeq="46"
+;#set KatakanaOneShotKeySeq=
+;#set HankakuKatakanaOneShotKeySeq=
+;#set BlockerSetterOneShotKeySeq=nfer
+
+;; 追加文字の代表文字を第1ストローク位置形式で表示
+#extraCharsPosition
+
+;; 通常面
+#include "../漢直系/_subtables/okt-kanji.tbl"
+
+;; ひらがな
+;#SandS
+;#include "noniiruto.tbl"
+;#end shift
+
+#ignoreWarning overwrite
+;; SandS or スペース前置で漢字読み置換(with句があるのでユーザー定義置換ファイルも使う)
+#yomiConvert with "user-yomi.txt"
+#
+-40>
+;#SandS
+#include "../漢直系/_subtables/okt-kanji.tbl"
+;#end SandS
+
+;; 起点Combo
+#define _USE_HEAD_COMBO
+#ifdef _USE_HEAD_COMBO
+#combination
+-40>||
+#include "../漢直系/_subtables/okt-kanji.tbl"
+#end combination
+#endif
+
+#yomiConvert end
+-40,40>" "
+#enableWarning overwrite
+
+;; 打ちにくいカタカナ
+;-1>-5>"ヲ" -1>-6>"ゥ" -1>-7>"ヴ" -1>-8>"ヂ" -1>-9>"ヅ"
+;-3>-5>"ヮ" -3>-6>"ヰ" -3>-7>"ヱ" -3>-8>"ヵ" -3>-9>"ヶ"
+;-4>-5>"ヴ" -4>-6>"ヴィ" -4>-7>"ヴァ" -4>-8>"ヴォ" -4>-9>"ヴェ"
+
+#include "../漢直系/_subtables/okt-symbols.tbl"
+
+;;-9,9>"!{Tab}"

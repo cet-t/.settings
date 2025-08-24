@@ -1,0 +1,26 @@
+## NAME: QWERTY [US]
+## DecoderKey から文字へのマッピング
+
+## このように行頭に "##" のある行はコメントとなる
+## ただし、 "## NORMAL"、"## SHIFT"、"## END"、"## YEN=" は特別扱い
+## "## NORMAL" から "## END" までが Shift なしで打鍵したときの文字
+## "## SHIFT" から "## END" までが Shift して打鍵したときの文字 (省略可能)
+## "## YEN=nn" は nn番目の DecoderKey を全角に変換する際に "￥" にする指定となる (省略時は自動判定)
+
+## NORMAL
+1234567890
+qwertyuiop
+asdfghjkl;
+zxcvbnm,./
+ -=\[]'`\ 
+## END
+
+## YEN=48
+
+## SHIFT
+!@#$%^&*()
+QWERTYUIOP
+ASDFGHJKL:
+ZXCVBNM<>?
+ _+|{}"~  
+## END

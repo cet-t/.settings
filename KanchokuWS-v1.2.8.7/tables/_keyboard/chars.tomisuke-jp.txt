@@ -1,0 +1,18 @@
+## NAME: Tomisuke [JP]
+## URL: https://tomisuke.hatenablog.com/entry/2022/07/19/185105
+
+## このように行頭に "##" のある行はコメントとなる
+## ただし、 "## NORMAL"、"## SHIFT"、"## END"、"## YEN=" は特別扱い
+## "## NORMAL" から "## END" までが Shift なしで打鍵したときの文字
+## "## SHIFT" から "## END" までが Shift して打鍵したときの文字 (省略可能)
+## "## YEN=nn" は nn番目の DecoderKey を全角に変換する際に "￥" にする指定となる (省略時は自動判定)
+
+## NORMAL
+:234567890
+1,.-;lrdyp
+aoeiugntsk
+xcvwqjhmbz
+ ^\\@[f]/ 
+## END
+
+## YEN=43

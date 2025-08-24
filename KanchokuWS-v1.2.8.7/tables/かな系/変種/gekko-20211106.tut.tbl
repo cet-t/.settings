@@ -1,0 +1,7 @@
+#define display-name "月光 w/ TUT"
+
+#include "../gekko-20211106.tbl"
+
+#SandS
+#include "../../漢直系/旧版/tut.tbl"
+#end SandS

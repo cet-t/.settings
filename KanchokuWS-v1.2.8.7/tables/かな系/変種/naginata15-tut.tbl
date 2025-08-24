@@ -1,0 +1,14 @@
+#define display-name "薙刀式 v15 w/ TUT"
+
+;; 変換、無変換を拡張シフトB面に割り当て
+#assignPlane xfer=shiftB
+#assignPlane nfer=shiftB
+
+;; 薙刀式の定義を読み込む
+#include "../naginata15.tbl"
+
+;; TUT-Code (拡張シフトB面)
+#shiftB
+#include "../../漢直系/旧版/tut.tbl"
+#end shift
+

@@ -1,0 +1,84 @@
+#define display-name "NICOLA(無変換-変換)"
+
+;; DvorakJ より引用
+;;
+;; NICOLA 配列規格書
+;; http://nicola.sunicom.co.jp/spec/kikaku.htm
+;;
+;; よく分からない NICOLA配列を復元してみる - blechmusik2の日記
+;; http://d.hatena.ne.jp/blechmusik2/20100110/1263060420
+;;
+
+;; 下記の定義のうち、使いたいもののコメントを外して、使わないものはコメント化すること
+#define NFER_AND_XFER       ;; 左シフト:無変換キー、右シフト:変換キー
+;;#define NFER_AND_SPACE	;; 左シフト:無変換キー、右シフト:スペースキー
+;;#define SPACE_AND_XFER	;; 左シフト:スペースキー、右シフト:変換キー
+
+;; 単打
+{
+   1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 |  0 |
+  。 | か | た | こ | さ | ら | ち | く | つ | ， |
+  う | し | て | け | せ | は | と | き | い | ん |
+  ． | ひ | す | ふ | へ | め | そ | ね | ほ | ・ |
+ " " | "-"| "^"| ￥ | 、 | 「 | ":"| 」 | 
+}
+
+;; 「無変換」「変換」を単打したとき、そのまま「無変換」「変換」キーとする設定
+;;-$nfer>"!{nfer}"
+;;-$xfer>"!{xfer}"
+
+;; 左シフト(無変換)
+#store LEFT_SHIFT
+{
+     |    |    |    |    |    |    |    |    |    |
+  ぁ | え | り | ゃ | れ | ぱ | ぢ | ぐ | づ | ぴ |
+  を | あ | な | ゅ | も | ば | ど | ぎ | ぽ | "" |
+  ぅ | ー | ろ | や | ぃ | ぷ | ぞ | ぺ | ぼ | @゛|
+}
+#end store
+
+;; 右シフト(変換)
+#store RIGHT_SHIFT
+{
+     |    |    |    |    |    |    |    |    |    |
+  @゜| が | だ | ご | ざ | よ | に | る | ま | ぇ |
+  ヴ | じ | で | げ | ぜ | み | お | の | ょ | っ |
+  "" | び | ず | ぶ | べ | ぬ | ゆ | む | わ | ぉ |
+}
+#end store
+
+;; 相互ワンショットシフト
+#combination oneshot
+;; 左シフト:無変換キー、右シフト:変換キー
+#ifdef NFER_AND_XFER
+#disableExtKey nfer
+-$nfer>
+#load LEFT_SHIFT
+
+#disableExtKey xfer
+-$xfer>
+#load RIGHT_SHIFT
+#endif
+
+;; 左シフト:無変換キー、右シフト:スペースキー
+#ifdef NFER_AND_SPACE
+#disableExtKey nfer
+-$nfer>
+#load LEFT_SHIFT
+
+#SandS disable
+-$space>
+#load RIGHT_SHIFT
+#endif
+
+;; 左シフト:スペースキー、右シフト:変換キー
+#ifdef SPACE_AND_XFER
+#SandS disable
+-$space>
+#load LEFT_SHIFT
+
+#disableExtKey xfer
+-$xfer>
+#load RIGHT_SHIFT
+#endif
+#end combination

@@ -1,0 +1,203 @@
+#define display-name "のにいると(書き換え) 13 -- 漢直指向かな配列"
+
+;; Version: 0.13
+;; 作成日: 2022/12/16
+;; 作成者: 岡 俊行
+
+;; ・通常面で2打鍵以上で漢字を打つことが前提
+;; ・SandS でひらがなを打鍵する
+;; ・なるべく清濁同置になるようにしたが例外あり（「がで」は単打、「べづげ」は別置）
+;; ・半濁音、「ゃゅょ」はD前置
+;; ・「ぁぃぅぇぉゎゐゑ」はK前置
+;; ・拗音はDK前置またはKD前置にまとめた
+;; ・「ので」は中・人で取る最適化あり
+;; ・DD前置、KK前置で様々な連語を配置
+
+;; 単打ひらがな
+#store SINGLE_HIT_NONI
+{
+   ！ | ー | ん | ⇒ |    |    | → | ん | ー | ？ |
+   へ | た | し | て | め | く | か | ら | れ | さ |
+   は | に | 。 | の | で | っ | い | 、 | る | と |
+   け | り | あ | が | ま | こ | す | な | う | も |
+}
+#end store
+
+;; D前置シフト
+#store D_SHIFT_NONI
+      |    |    |    |    | ゃ | ゅ | ょ |    |    |
+   ぺ | み | ぽ | ぱ | ぷ | ぐ |ちょ| び | ね | ぼ |
+   を | せ | 。 | よ | ょ | 、 | お |    | ぞ | ど |
+   ぬ | ぁ | ぴ | ち | ぃ | ご | ず | ゆ | う | ぶ |
+   
+;   -$1>ました
+;   -$2>ます
+;   -$3>です
+#end store
+
+;; K前置シフト
+#store K_SHIFT_NONI
+      | ゐ | ゑ | ゎ | ぅ |    |    |    |    |    |
+   べ | だ | じ |しょ| ぎ | ぅ | む | ひ | え | ほ |
+   ば | ぜ |    | ー | や | ゃ | き |    | そ | わ |
+   げ | ろ | ん | ぢ | づ | ぉ | つ | ゅ | ぇ | ふ |
+   
+;   -$1>ません
+#end store
+
+;; DK前置シフト
+#store DK_SHIFT_NONI
+      |    |    |    |    |    |    |    |    |    |
+  きゃ|ぎゃ|じゃ|しゃ|    |    |ちゃ|    |ぢゃ|    |
+  きゅ|ぎゅ|じゅ|しゅ|    |    |ちゅ|    |ぢゅ|    |
+  きょ|ぎょ|じょ|しょ|    |    |ちょ|    |ぢょ|    |
+#end store
+
+;; KD前置シフト
+#store KD_SHIFT_NONI
+      |    |    |    |    |    |    |    |    |    |
+      |ぴゃ|    |にゃ|    |    |りゃ|みゃ|ひゃ|びゃ|
+      |ぴゅ|    |にゅ|    |    |りゅ|みゅ|ひゅ|びゅ|
+      |ぴょ|    |にょ|    |    |りょ|みょ|ひょ|びょ|
+#end store
+
+;; DD前置シフト
+
+;; KK前置シフト
+#store KK_SHIFT_NONI
+      |    |    |    |    |    |    |    |    |    |
+      |    |    |    |    |    |    | $I |    |    |
+      |    |    |    |    |    | $J |    | $L |    |
+      |    |    |    |    |    |    | $cm|    |    |
+      
+  -$J>ください
+  -$I>あります
+  -$L>しかし
+  -$cm>ません
+#end store
+
+#store NONIITUTO_SHIFT
+;; D前置
+-22>
+{
+  #load D_SHIFT_NONI
+}
+
+;; K前置
+-27>
+{
+  #load K_SHIFT_NONI
+}
+
+; DK前置
+-22,27>
+{
+  #load DK_SHIFT_NONI
+}
+
+;; KD前置
+-27,22>
+{
+  #load KD_SHIFT_NONI
+}
+
+;; DD前置
+
+;; KK前置
+-27,27>
+{
+  #load KK_SHIFT_NONI
+}
+
+#end store ;; NONIITUTO_SHIFT
+
+#store PRE_REWRITE_NONI
+;; [D]前置書き換え
+%22>
+{
+  #load D_SHIFT_NONI
+  
+  -27>{
+    #load DK_SHIFT_NONI
+  }
+}
+
+;; [K]前置書き換え
+%27>
+{
+  #load K_SHIFT_NONI
+
+  -22>{
+    #load KD_SHIFT_NONI
+  }
+  
+  -27>{
+    #load KK_SHIFT_NONI
+  }
+}
+
+#end store ;; PRE_REWRITE_NONI
+
+;; 単打
+#load SINGLE_HIT_NONI
+
+
+#if 0
+;; 順次打鍵
+#load NONIITUTO_SHIFT
+#else
+;; 前置書き換え
+#load PRE_REWRITE_NONI
+#endif
+
+#define PRE_SUCCESSIVE
+
+;; 前置連続シフト(必要なら PRE_SUCCESSIVE を define すること)
+#ifdef PRE_SUCCESSIVE
+#combination prefix
+#load NONIITUTO_SHIFT
+#end combination
+#endif
+
+
+;; 相互連続シフト(必要なら COMBO_SUCCESSIVE を define すること)
+#ifdef COMBO_SUCCESSIVE
+#combination successive
+#load NONIITUTO_SHIFT
+#end combination
+#endif
+
+
+;; 相互ワンショットシフト(必要なら COMBO_ONESHOT を define すること)
+#ifdef COMBO_ONESHOT
+#combination oneshot
+#load NONIITUTO_SHIFT
+#end combination
+#endif
+
+
+;; ---------------------------
+
+;; 参考:頻度順リスト
+;; Wikipedia except10 (変換なし; カタカナに隣接する「ー」を無視)
+;32593  の、に。たるはとをし    の、に。たるはとをしでていがれなっからさありもこすうよまくめ
+;13754  でていがれなっからさ
+;5915   ありもこすうよまくめ
+;2482   そきけおつどやわえだ    そきけおつどやわえだんちみせばへじびずげほろべむぶひねごぐぎ
+;1461   んちみせばへじびずげ
+;506    ほろべむぶひねごぐぎ
+;155    づゆぼふざぜぬーぱ      づゆぼふざぜぬーぱぽぷぴぺゑゐぢ
+;20     ぽぷぴぺゑゐぢ
+
+;; MANUAL, FAQ, Wikipedia, 社説 計20万字 (変換なし; カタカナに隣接する「ー」を無視)
+;6425  の、にを。るはしとた     の、にを。るはしとたいでてがなすれからまさもっうこりあきだく
+;3013  いでてがなすれからま
+;1171  さもっうこりあきだく
+;720   よめけそえやどつおみ     よめけそえやどつおみせわんばちへべじずびろげぜほむひねぐぎぶ
+;321   せわんばちへべじずび
+;145   ろげぜほむひねぐぎぶ
+;37    ょごづざぬゃゆふぼぞ     ょごづざぬゃゆふぼぞゅぁーぃゑゐゎぽぷぉぇぅ
+;15    ゅ
+;4     ぁーぃ
+;1     ゑゐゎぽぷぉぇぅ
+

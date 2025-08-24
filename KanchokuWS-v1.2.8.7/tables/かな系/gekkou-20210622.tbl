@@ -1,0 +1,45 @@
+#define display-name "月光 2021/6/22版"
+
+;; 
+;; 中指シフト月光 2021/6/22版
+;; 作者: tken氏
+;; https://twitter.com/fsktakahasi/status/1407319375946731520
+;; 
+
+;;単打
+{
+  |  |  |  |  |  |  |  |  |  |
+も|と|は|て|ょ|つ|ん|い|の|り|っ|
+し|か|  |こ|た|く|う|  |゛|゜|ー|
+す|き|に|な|さ|ま|る|、|。|・|
+}
+
+#store SHIFT_TABLE
+  |  |  |  |  |  |  |  |  |  |
+ぁ|れ|せ|ほ|め|む|み|よ|え|ぇ|
+ぃ|け|  |  |あ|お|  |  |を|ち|ゆ|
+ぅ|ね|へ|そ|や|わ|ろ|ひ|ぬ|ぉ|
+#end store
+
+#store D_SHIFT_TABLE
+-23>ゅ
+-26>ふ
+#end store
+
+#store K_SHIFT_TABLE
+-23>ら
+-26>ゃ
+#end store
+
+;; 順次打鍵
+-22> ;; [D]
+{
+#load SHIFT_TABLE
+#load D_SHIFT_TABLE
+}
+
+-27> ;; [K]
+{
+#load SHIFT_TABLE
+#load K_SHIFT_TABLE
+}

@@ -1,0 +1,20 @@
+#define display-name "同時打鍵テスト用"
+
+;; 単打
+-$G>で
+-$J>い
+-$K>あ
+-$L>る
+-$W>た
+-$E>し
+-$I>な
+-$O>う
+
+;; 相互ワンショットシフト(必要なら COMBO_ONESHOT を define すること)
+#combination oneshot
+-$K,$J>き
+-$W,$E>み
+-$I,$O>え
+#end combination
+
+

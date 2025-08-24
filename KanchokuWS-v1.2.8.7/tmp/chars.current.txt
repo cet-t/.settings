@@ -1,0 +1,7 @@
+## NORMAL
+1234567890qwertyuiopasdfghjkl;zxcvbnm,./ -=\[]'`\ 
+## END
+## YEN=48
+## SHIFT
+!@#$%^&*()QWERTYUIOPASDFGHJKL:ZXCVBNM<>? _+|{}"~  
+## END

@@ -1,0 +1,162 @@
+#-------------------------------------------------------------------------------------------------------------------
+# 設定は2種類ある
+# 1) シフト面設定 … 修飾キーに割り当てるシフト面の設定
+# 2) 変換ターゲット設定 … 修飾キーと被修キーの組み合わせに対して変換先のキーや機能を割り当てる設定
+#
+#
+# ■構成要素
+#   - modifier (修飾キー)
+#       - Space(space), CapsLock(caps), 英数(alnum), 無変換(nfer), 変換(xfer), 右シフト(rshift)を修飾キーとして使う
+#       - Space を modifier として使用するには SandS を有効に設定する必要あり
+#       - 変換ターゲット設定の場合に限り、左コントロール(lctrl)、右コントロール(rctrl)およびシフト(shift)が使用可能
+#       - 変換ターゲット設定で単打の場合に限り、 esc, 半角/全角(zenkaku), tab, kana, ... という拡張修飾キーや特殊キー名も使用可能
+#
+#   - plane (シフト面)
+#       None, Shift, ShiftA, ShiftB の4通り
+#       - None : シフト無し
+#       - Shift : 通常シフト面
+#       - ShiftA : ユーザ定義シフト面(その1)
+#       - ShiftB : ユーザ定義シフト面(その2)
+#
+#   - modifiee (被修飾キー)
+#       modifiee には、漢直コード(0～48)で指定する通常キーあるいは esc/tab/back/enter/ins/del/home/end/pgup/pgdn/up/left/down/right で指定される特殊キーを指定できる。
+#
+#   - target (変換先)
+#       変換先となるキーや機能を指定する。テーブルファイルによるシフト面の文字変換定義よりも優先される。
+#       拡張シフト面を含む漢直コードを記述することもできる(10, S21, B11など)。この場合、漢直モードがOFFのときにもテーブルファイルに該当コード位置に記述した文字列が出力される。
+#       以下のいずれかを指定：
+#         Esc, Tab, BS, Enter, Ins, Del, Home, End, PgUp, PgDn, Up, Left, Down, Right,
+#         ModeToggle, Activate, Deactivate, FullEscape, Unblock, HelpRotate, HelpUnrotate,
+#         DateRotate, DateUnrotate, HistNext, HistPrev, StrokeHelp, BushuCompHelp,
+#         RomanStrokeGuide, UpperRomanStrokeGuide, HiraganaStrokeGuide, ZenkakuConversion,
+#         ExchangeCodeTable, CopySelectionAndSendToDictionary, ClearStroke,
+#         LeftShiftBlocker, rightShiftBlocker, leftShiftMazeStartPos, rightShiftMazeStartPos,
+#         Space, ShiftSpace
+#       - 頭に ^ を付けると Ctrl 修飾を表す (例： ^Left は Ctrl＋左矢印)
+#       - 複数の機能列(複合コマンド)を実行したい場合は、テーブルファイルで !{name} 記法による機能キー記述をしておき、その漢直コードを指定する
+#         - 例: nfer:16:B16   # nfer+U ⇒ シフトB面のUに割り当てた文字列を出力。-B16>"!{+Home}!{^X}" なら、カーソル位置から行頭までをカット
+#         - または、直接複合コマンドを記述する(上記までのルールで解析できない文字列は複合コマンド記述とみなされる)
+#           例: nfer:16:!{+Home}!{^X}
+#
+#   - すべての名前は大文字・小文字が無視される
+#
+# ■記法
+#   - シフト面設定:
+#     modifier=plane[ | plane]
+#       1つめの plane は漢直ONの場合の設定。2つめは漢直OFFの場合の設定
+#       2つめを省略するとOFFの場合も1つめの設定が使われる
+#
+#   - 変換ターゲット設定
+#     modifier:modifiee:target
+#       modifier と modifiee の組み合わせを target に変換する
+#       modifiee を省略すると modifier の単打を target に変換する設定となる
+#
+# ■シフト面の定義
+#   シフト面の文字変換はテーブルファイル(*.tbl)で定義する。
+#   例：シフト単打によるひらがな入力
+#       #shiftA
+#       {
+#          "お" , "え" , "み" , "つ" , "ば" , "や" , "ど" , "け" , "そ" , "せ",
+#          "も" , "れ" , "な" , "た" , "っ" , "あ" , "ま" , "い" , "す" , "こ",
+#          "る" , "と" , "に" , "が" , "は" , "で" , "し" , "の" , "て" , "を",
+#          "ん" , "う" , "り" , "か" , "き" , "だ" , "さ" , "く" , "ら" , "よ",
+#             @v,    @v,    @v,    @v, "。" ,    @v, "、" ,    @v,    @v,
+#       }
+#   実例については okt.tbl と okt-hiragana.tbl を参照。
+
+#-------------------------------------------------------------------------------------------------------------------
+# シフト面設定 (ここに設定のない機能キーは、拡張修飾キーとして扱わない; 下記の変換ターゲット設定がされた場合を除く)
+space=ShiftA | none
+xfer=Shift
+#rshift=Shift | none            # 右Shiftキーを ShiftA面に割り当てている。漢直OFF時を None に設定しているが、元が Shift キーなので漢直OFF時は通常シフトとして働く
+#nfer=Shift                      # この設定がない場合に下記の変換ターゲット設定を行うと ShiftB 面が割り当てられる
+
+#-------------------------------------------------------------------------------------------------------------------
+# 拡張修飾キーの単打設定 (ShiftB面の割り当てはやらない)
+#rshift::ExchangeCodeTable
+#tab::HistNext                   # Tab で履歴の検索と次候補選択
+#rshift::ModeToggle              # rshift単打で漢直モードのトグル
+#nfer::ModeToggle                 # nfer単打で漢直モードのトグル
+#nfer::ClearStroke                # nfer単打で打鍵中のストロークをリセット
+#xfer::ModeToggleFollowCaret      # Xfer単打でカレット再追従かつ漢直モードのON/OFF
+xfer::ModeToggle                 # Xfer単打で漢直モードのON/OFF
+#kana::ExchangeCodeTable         # kana単打
+
+#-------------------------------------------------------------------------------------------------------------------
+# 変換ターゲット設定 (漢直モード ON/OFF 両方で有効)
+#   使用するシフト面が設定されていない拡張修飾キーには、ShiftB面が割り当てられる (lctrl, rctrl を除く)
+#   拡張シフト面を含む漢直コードを記述することもできる(10, S21, B11など)。
+#       この場合、漢直モードがOFFのときにもテーブルファイルの該当コード位置に記述した文字列(特殊キー含む)が出力される。
+
+#shift:Tab:HistPrev              # Shift+Tab で履歴の検索と前候補選択
+
+#nfer:9:ModeToggleFollowCaret    # 0
+
+nfer:10:^Left                   # Q
+#nfer:11:^Right                  # W
+nfer:11:B11                     # W
+#nfer:12:End                     # E → TableFile で定義済み
+nfer:12:B12                     # E
+nfer:13:Unblock                 # R = ブロッカー解除
+nfer:14:^T                      # T = ^T
+nfer:15:HistPrev                # Y = 履歴の逆順選択
+#nfer:16:HistPrev                # U
+nfer:16:rctrl:16:(mintty|PuTTY)?(!{^U}):(!{+Home}!{^X})   # U
+nfer:17:HistNext                # I
+#nfer:17:^I                      # I = ^I
+#nfer:18:PgDn                    # O
+nfer:18:CopySelectionAndSendToDictionary # アクティブウィンドウにCtrl-Cを送って文字列をコピーして、それを辞書に登録する
+nfer:19:Up                      # P
+
+#nfer:20:Home                    # A → TableFile で定義済み
+nfer:20:B20                     # A
+nfer:21:^S                      # S
+#nfer:22:Del                     # D → TableFile で定義済み
+nfer:22:B22                     # D
+nfer:23:Right                   # F
+nfer:24:FullEscape              # G = 打鍵状態の全リセットとブロッカー設定
+nfer:25:BS                      # H
+#nfer:26:Down                    # J
+#nfer:26:ModeToggleFollowCaret   # J = カレット再追従かつ漢直モードのON/OFF
+#nfer:26:ExchangeCodeTable       # J = コードテーブルの入れ替え
+nfer:26:A26
+#nfer:27:Up                      # K
+nfer:27:B27                     # K
+#nfer:28:Right                   # L
+nfer:28:Esc                     # L
+#nfer:29:DateRotate              # ; = 日時文字列入力(フォーマット正順切替)
+nfer:29:ModeToggleFollowCaret   # ; = カレット再追従かつ漢直モードのON/OFF
+#nfer:29:BlockerToggle           # ; = ブロッカーのトグル
+
+nfer:30:^Z                      # Z
+nfer:31:^X                      # X
+nfer:32:^C                      # C
+nfer:33:^V                      # V
+nfer:34:Left                    # B
+nfer:35:Down                    # N
+nfer:36:Enter                   # M
+#nfer:37:helpRotate              # , = 打鍵ヘルプ表示の正順切替
+lctrl:37:leftShiftMazeStartPos  # , = 交ぜ書き開始位置の左シフト
+nfer:37:leftShiftBlocker        # , = ブロッカーの左シフト (左コントロール使用)
+#nfer:38:helpUnRotate            # . = 打鍵ヘルプ表示の逆順切替
+lctrl:38:rightShiftMazeStartPos # , = 交ぜ書き開始位置の右シフト(直前にのみ戻れる)
+nfer:38:rightShiftBlocker       # . = ブロッカーの右シフト (左コントロール使用)
+#nfer:39:bushuCompHelp           # / = 部首合成ヘルプ
+nfer:39:StrokeHelp              # / = 最後に入力した文字のストロークヘルプ(ストローク定義がないか、2回続けて呼び出すと部首合成ヘルプになる)
+
+#nfer:40:HistNext                # space = 履歴の正順選択
+nfer:40:DirectSpace              # space = デコーダを介さずに直接 space を出力
+#nfer:40:ShiftSpace              # space = Shift+Space (交ぜ書きなどに割り当て)
+nfer:41:Esc                     # -
+nfer:42:ZenkakuConversion       # ^ = 全角入力モード
+#nfer:43:RomanStrokeGuide        #￥ = ローマ字読み打鍵ガイドモード
+nfer:43:HiraganaStrokeGuide     #￥ = ひらがな読み打鍵ガイドモード
+#nfer:44:ModeToggle              # @ = 漢直モードのON/OFF
+#nfer:44:ModeToggleFollowCaret   # @ = カレット再追従かつ漢直モードのON/OFF
+nfer:44:ExchangeCodeTable       # @ = コードテーブルの入れ替え
+#nfer:45:PgUp                    # [
+nfer:45:KatakanaConversion      # [ = カタカナ入力モード
+nfer:46:DateRotate              # : = 日時文字列入力(フォーマット正順切替)
+#nfer:46:DateUnrotate            # : = 日時文字列入力(フォーマット逆順切替)
+nfer:47:PgDn                    # ]
+nfer:48:UpperRomanStrokeGuide   # \ = 英大文字によるローマ字読み打鍵ガイド

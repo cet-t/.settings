@@ -1,0 +1,61 @@
+#define display-name "OKT記号系"
+
+;; 1打鍵め 41(-) で記号
+#ignoreWarning overwrite
+-41>
+{
+      | ↑ | ⇔ | ↓ |    |   |    |    |   |〇| ― |
+   ！ | ？ | ⇒ | → | ← |   | ★ | ☆ |   |   |
+   （ | 【 | 】 | ） | ： |   |    |    |   |   |
+   ■ | □ | ● | ○ | × |   |    |    |   |   |
+   "-"
+}
+
+;; 2打鍵め 46(:) で記号分散
+-*>-46>
+{
+       ,     ,     ,     ,     ,   ,    ,   ,   ,   ,
+   "！", "？", "←", "→", "↑",   ,    ,   ,   ,   ,
+   "（", "【", "】", "）", "：",   ,"×",   ,   ,   , 
+   "■", "□", "●", "○", "↓",   ,    ,   ,   ,   ,
+}
+
+;; ShiftA面 記号
+#ifdef __NOT_DEFINED
+#shiftA
+-6>-6>"【"
+-7>-7>"（"
+-8>-8>"）"
+-9>-9>"】"
+-6>-7>"【】!{left}"
+-7>-6>"『』!{left}"
+-7>-8>"（）!{left}"
+-8>-7>"「」!{left}"
+#end shift
+#endif
+
+;;-41>
+;;#include "tt.right.tbl"
+
+;;-42>
+;;#include "tt.left.tbl"
+
+#ifdef __NOT_DEFINED
+
+-B5>
+#include "greek.tbl"
+
+-B6>
+#include "symbol1.tbl"
+
+-B7>
+#include "symbol2.tbl"
+
+-B8>
+#include "symbol3.tbl"
+
+-B9>
+#include "symbol4.tbl"
+
+#endif
+#enableWarning overwrite

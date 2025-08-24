@@ -1,0 +1,45 @@
+#define display-name "月光 2021/11/06版"
+
+;; 
+;; 中指シフト月光 2021/11/06版
+;; 作者: tken氏
+;; URL: https://twitter.com/fsktakahasi/status/1456935806841462788
+;; 
+
+;;単打 (「゛」と「゜」はそれぞれ濁音化、半濁音化機能の呼び出し)
+{
+ 1| 2| 3| 4| 5| 6| 7| 8| 9| 0|ー|＾|￥|
+も|か|と|て|ょ|つ|ん|い|の|り|っ|「|
+は|し|  |こ|た|く|う|  |゛|゜|ー|」|
+す|き|に|な|さ|ま|る|、|。|・|￥|
+}
+
+;; シフト共通部
+#store COMMON_SHIFT_TABLE
+  |  |  |  |  |  |  |  |  |  |
+ぁ|れ|せ|ほ|め|む|み|よ|え|ぇ|
+ぃ|け|  |ら|あ|お|ふ|  |を|ち|ゆ|
+ぅ|ね|へ|そ|や|わ|ろ|ひ|ぬ|ぉ|
+#end store
+
+;; 「ゅ」「ゃ」の定義で重複が発生するが、それを無視する
+#ignoreWarning overwrite
+
+;; シフト部
+#store SHIFT_TABLE
+-22> ;; [D]
+{
+#load COMMON_SHIFT_TABLE
+-23>ゅ
+}
+
+-27> ;; [K]
+{
+#load COMMON_SHIFT_TABLE
+-26>ゃ
+}
+#end store
+
+
+;; シフト順次打鍵
+#load SHIFT_TABLE

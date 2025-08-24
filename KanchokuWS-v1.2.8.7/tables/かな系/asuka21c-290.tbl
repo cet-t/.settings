@@ -1,0 +1,81 @@
+#define display-name "飛鳥21c-290"
+
+;; 引用元: http://www.eurus.dti.ne.jp/~yfi/aska_arrangement/
+;; 引用元: http://oookaworks.seesaa.net/article/499074448.html?1681996219#gsc.tab=0
+;; 「飛鳥カナ配列」: http://ameblo.jp/asuka-layout/entry-10589277915.html
+;; 
+
+;; 下記の定義のうち、使いたいもののコメントを外して、使わないものはコメント化すること
+#define NFER_AND_XFER       ;; 左シフト:無変換キー、右シフト:変換キー
+;;#define NFER_AND_SPACE	;; 左シフト:無変換キー、右シフト:スペースキー
+;;#define SPACE_AND_XFER	;; 左シフト:スペースキー、右シフト:変換キー
+
+;; 変換・無変換キーの単打を本来のキーとして利用する場合は、設定ダイアログの
+;;  「同時打鍵・IME」タブ > 「単打の場合は本来のキーとして機能する」
+;; にチェックを入れること
+
+;; 単打
+{
+    |    |    |    |    |    |    |    |    |    |
+ 「 | ー | じ | ぴ | ％ | － | ・ | と | は | へ | 」 |
+ き | し | う | て | ぎ | ゆ | ん | い | か | た | け |
+ ほ | せ | み | ぶ | び | ゃ | っ | ょ | ゅ | め | 
+}
+
+;; 左シフト
+#store LEFT_SHIFT
+{
+    |    |    |    |    |    |    |    |    |    |
+ ざ | ね | え | ぁ | ぅ | ぇ | ぃ | よ | ふ | ！ | ） |
+ だ | さ | あ | り | ぉ | ず | る | す | ま | で | げ |
+ ぜ | ひ | ち | ば | ヴ | や | が | 、 | 。 | ？ |
+}
+#end store
+
+;; 右シフト
+#store RIGHT_SHIFT
+{
+    |    |    |    |    |    |    |    |    |    |
+ （ | べ | れ | ぺ | ＆ | ぢ | ～ | そ | こ | ぞ | ご |
+ わ | お | な | ら | ぬ | ぼ | く | の | つ | に | ろ |
+ ぷ | ぐ | ぱ | づ | ＊ | む | を | ど | も | ぽ |
+}
+#end store
+
+;; 相互連続シフト
+#combination successive
+
+;; 左シフト:無変換キー、右シフト:変換キー
+#ifdef NFER_AND_XFER
+#disableExtKey nfer
+-$nfer>
+#load LEFT_SHIFT
+
+#disableExtKey xfer
+-$xfer>
+#load RIGHT_SHIFT
+#endif
+
+;; 左シフト:無変換キー、右シフト:スペースキー
+#ifdef NFER_AND_SPACE
+#disableExtKey nfer
+-$nfer>
+#load LEFT_SHIFT
+
+#SandS disable
+-$space>
+#load RIGHT_SHIFT
+#endif
+
+;; 左シフト:スペースキー、右シフト:変換キー
+#ifdef SPACE_AND_XFER
+#SandS disable
+-$space>
+#load LEFT_SHIFT
+
+#disableExtKey xfer
+-$xfer>
+#load RIGHT_SHIFT
+#endif
+
+#end combination
