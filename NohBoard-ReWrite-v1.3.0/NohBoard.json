@@ -3,7 +3,7 @@
   "FollowShiftForCapsInsensitive": false,
   "FollowShiftForCapsSensitive": false,
   "LoadedCategory": "BurningFish",
-  "LoadedGlobalStyle": true,
+  "LoadedGlobalStyle": false,
   "LoadedKeyboard": "us_intlmousemove",
   "LoadedStyle": "default",
   "MouseFromCenter": false,
@@ -15,7 +15,7 @@
   "TrapToggleKeyCode": 145,
   "UpdateInterval": 33,
   "UpdateTextPosition": false,
-  "WindowTitle": "",
-  "X": 1310,
-  "Y": 932
+  "WindowTitle": "Keyboard",
+  "X": 43,
+  "Y": 977
 }
