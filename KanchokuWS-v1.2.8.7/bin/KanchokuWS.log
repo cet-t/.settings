@@ -16,3 +16,13 @@
 2025/08/22 21:26:25.643 INFO [FrmKanchoku.FrmKanchoku_Load(213)] ==== KANCHOKU WS START (LogLevel=2) ====
 2025/08/22 21:37:05.564 INFO [FrmKanchoku.FrmKanchoku_FormClosing(483)] ==== KANCHOKU WS TERMINATED ====
 
+
+
+2025/09/18 22:46:57.983 INFO [FrmKanchoku.FrmKanchoku_Load(213)] ==== KANCHOKU WS START (LogLevel=2) ====
+2025/09/18 22:50:27.570 INFO [FrmKanchoku.FrmKanchoku_FormClosing(483)] ==== KANCHOKU WS TERMINATED ====
+
+
+
+2025/09/18 22:50:27.690 INFO [FrmKanchoku.FrmKanchoku_Load(213)] ==== KANCHOKU WS START (LogLevel=2) ====
+2025/09/18 22:53:42.022 INFO [FrmKanchoku.FrmKanchoku_FormClosing(483)] ==== KANCHOKU WS TERMINATED ====
+
