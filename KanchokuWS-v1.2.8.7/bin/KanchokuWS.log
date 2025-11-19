@@ -26,3 +26,106 @@
 2025/09/18 22:50:27.690 INFO [FrmKanchoku.FrmKanchoku_Load(213)] ==== KANCHOKU WS START (LogLevel=2) ====
 2025/09/18 22:53:42.022 INFO [FrmKanchoku.FrmKanchoku_FormClosing(483)] ==== KANCHOKU WS TERMINATED ====
 
+
+
+2025/11/19 01:43:09.099 INFO [FrmKanchoku.FrmKanchoku_Load(213)] ==== KANCHOKU WS START (LogLevel=2) ====
+2025/11/19 01:44:16.262 INFO [FrmKanchoku.FrmKanchoku_FormClosing(483)] ==== KANCHOKU WS TERMINATED ====
+
+
+
+2025/11/19 01:44:16.367 INFO [FrmKanchoku.FrmKanchoku_Load(213)] ==== KANCHOKU WS START (LogLevel=2) ====
+2025/11/19 01:53:25.640 INFO [FrmKanchoku.FrmKanchoku_FormClosing(483)] ==== KANCHOKU WS TERMINATED ====
+
+
+
+2025/11/19 01:53:25.736 INFO [FrmKanchoku.FrmKanchoku_Load(213)] ==== KANCHOKU WS START (LogLevel=2) ====
+2025/11/19 01:57:48.032 INFO [FrmKanchoku.FrmKanchoku_FormClosing(483)] ==== KANCHOKU WS TERMINATED ====
+
+
+
+2025/11/19 01:57:48.144 INFO [FrmKanchoku.FrmKanchoku_Load(213)] ==== KANCHOKU WS START (LogLevel=2) ====
+2025/11/19 01:57:48.372 ERROR [TableLines.handleError(848)] parseArrow: 定義されていないプレースホルダー: 17-18
+
+テーブルファイル tables\かな系\COMPRESSEDーshin-geta.tbl の 104行7文字目('>')がまちがっているようです：
+
+> -17-18>{ ...
+2025/11/19 01:57:48.373 ERROR [TableLines.handleError(849)] lines=
+lines=
+;; [J]
+-26>{
+    |    |    |    |    |    |    |    |    |    |
+    |    |    |    |    |    |    |    |    |    |
+    |    |    |    |    |"（）!{ENTER}!{Left}"| | | | |
+    |    |    |    |    | ？ |    |    |    |    |
+}
+
+;; [I][O]
+>> -17-18>{
+    |    |    |    |    |    |    |    |    |    |
+ ぴゅ | ゔぃ | ゔぁ | びゅ | みゅ |    |    |    |    |    |
+ ぴょ |    |    | びょ | みょ |    |    |    |    |    |
+ ぴゃ | ゔ | ゔぉ | びゃ | みゃ |    |    |    |    |    |
+}
+#end combination
+
+
+2025/11/19 01:58:50.302 INFO [FrmKanchoku.FrmKanchoku_FormClosing(483)] ==== KANCHOKU WS TERMINATED ====
+
+
+
+2025/11/19 01:58:50.396 INFO [FrmKanchoku.FrmKanchoku_Load(213)] ==== KANCHOKU WS START (LogLevel=2) ====
+2025/11/19 01:58:50.624 ERROR [TableLines.handleError(848)] parseArrow: 不正なプレーン指定: -18
+
+テーブルファイル tables\かな系\COMPRESSEDーshin-geta.tbl の 104行8文字目('>')がまちがっているようです：
+
+> -17,-18>{ ...
+2025/11/19 01:58:50.624 ERROR [TableLines.handleError(849)] lines=
+lines=
+;; [J]
+-26>{
+    |    |    |    |    |    |    |    |    |    |
+    |    |    |    |    |    |    |    |    |    |
+    |    |    |    |    |"（）!{ENTER}!{Left}"| | | | |
+    |    |    |    |    | ？ |    |    |    |    |
+}
+
+;; [I][O]
+>> -17,-18>{
+    |    |    |    |    |    |    |    |    |    |
+ ぴゅ | ゔぃ | ゔぁ | びゅ | みゅ |    |    |    |    |    |
+ ぴょ |    |    | びょ | みょ |    |    |    |    |    |
+ ぴゃ | ゔ | ゔぉ | びゃ | みゃ |    |    |    |    |    |
+}
+#end combination
+
+
+2025/11/19 02:00:09.178 INFO [FrmKanchoku.FrmKanchoku_FormClosing(483)] ==== KANCHOKU WS TERMINATED ====
+
+
+
+2025/11/19 02:00:09.288 INFO [FrmKanchoku.FrmKanchoku_Load(213)] ==== KANCHOKU WS START (LogLevel=2) ====
+2025/11/19 02:01:31.589 INFO [FrmKanchoku.FrmKanchoku_FormClosing(483)] ==== KANCHOKU WS TERMINATED ====
+
+
+
+2025/11/19 02:01:31.673 INFO [FrmKanchoku.FrmKanchoku_Load(213)] ==== KANCHOKU WS START (LogLevel=2) ====
+2025/11/19 02:03:47.975 INFO [FrmKanchoku.FrmKanchoku_FormClosing(483)] ==== KANCHOKU WS TERMINATED ====
+
+
+
+2025/11/19 02:03:48.069 INFO [FrmKanchoku.FrmKanchoku_Load(213)] ==== KANCHOKU WS START (LogLevel=2) ====
+2025/11/19 02:05:54.377 INFO [FrmKanchoku.FrmKanchoku_FormClosing(483)] ==== KANCHOKU WS TERMINATED ====
+
+
+
+2025/11/19 02:05:54.470 INFO [FrmKanchoku.FrmKanchoku_Load(213)] ==== KANCHOKU WS START (LogLevel=2) ====
+2025/11/19 02:10:41.613 INFO [FrmKanchoku.FrmKanchoku_FormClosing(483)] ==== KANCHOKU WS TERMINATED ====
+
+
+
+2025/11/19 02:10:41.708 INFO [FrmKanchoku.FrmKanchoku_Load(213)] ==== KANCHOKU WS START (LogLevel=2) ====
+2025/11/19 02:15:27.142 INFO [FrmKanchoku.FrmKanchoku_FormClosing(483)] ==== KANCHOKU WS TERMINATED ====
+
+
+
+2025/11/19 02:15:27.255 INFO [FrmKanchoku.FrmKanchoku_Load(213)] ==== KANCHOKU WS START (LogLevel=2) ====

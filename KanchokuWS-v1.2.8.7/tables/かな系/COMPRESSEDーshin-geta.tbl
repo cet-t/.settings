@@ -1,4 +1,4 @@
-#define display-name "新下駄配列（圧縮版）"
+﻿#define display-name "新下駄配列（圧縮版）"
 
 ;; DvrakJより引用・改変
 ;; 作者: kouy氏
@@ -12,7 +12,7 @@
   す | ま | き | る | つ | て | た | で | "。!{ENTER}" | ぶ | ￥ |
 }
 
-&す>ざ+:します
+&ざ+す>します
 
 #combination oneshot
 ;; [K]

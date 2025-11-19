@@ -1,10 +1,5 @@
 “¯Žž‚É‘ÅŒ®‚·‚é”z—ñ
 
-/*
- * Colemak keyboard layout: ergonomic, fast and easy to learn QWERTY/Dvorak alternative
- * http://colemak.com/
- */
-
 [
 1|2|3|4|5|6|7|8|9|0|-|=|\|
 q|g|d|l|f|k|w|o|u|y|[|]|
